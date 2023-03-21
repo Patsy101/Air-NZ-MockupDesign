@@ -1,0 +1,406 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Air NZ</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- font awesome cdn -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- fonts -->
+        <link rel = "stylesheet" href = "font/fonts.css">
+        <!-- normalize css -->
+        <link rel = "stylesheet" href = "css/normalize.css">   <!-- problems might occur in vercel app-->
+        <!-- custom css -->
+        <link rel = "stylesheet" href = "css/utility.css">
+        <link rel = "stylesheet" href = "css/style.css">
+        <link rel = "stylesheet" href = "css/responsive.css">
+<!-- start of nav bar -->
+        <nav class = "navbar">
+            <div class = "container flex">
+                <a href = "index.html" class = "site-brand">
+                    Air <span></span>
+                    <span>New Zealand</span>
+                </a>
+
+                <button type = "button" id = "navbar-show-btn" class = "flex">
+                    <i class = "fas fa-bars"></i>
+                </button>
+                <div id = "navbar-collapse">
+                    <button type = "button" id = "navbar-close-btn" class = "flex">
+                        <i class = "fas fa-times"></i>
+                    </button>
+                    <ul class = "navbar-nav">
+                        <li class = "nav-item">
+                            <a href = "Plan your Travel.html" class = "nav-link">Plan Your Travel</a>
+                        </li>
+                       
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "blog.html" class = "nav-link">Where we Fly</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "about.html" class = "nav-link">About Where to Next</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "contact.html" class = "nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- End of Navbar -->
+           <!-- Start of header -->
+        <header class = "flex">
+            <div class = "container">
+                <div class = "header-title">
+                    <h1>Where to Next?</h1>
+                    <p> Celebrating the New Zealand Spirit of Looking Forward</p>
+                </div>
+                <div class = "header-form">
+                    <h2>Search Flights:</h2>
+                    <form class = "flex">
+                        <input type = "text" class = "form-control" placeholder="Auckland">
+                        <input type = "text" class = "form-control" placeholder="Destination">
+                        <input type="date" class = "form-control" placeholder=" Depart Date">
+                        
+                        <input type="submit" class = "btn" value = "Search">
+                    </form>
+                </div>
+            </div>
+        </header>
+
+        <!--JavaScript-->
+        <script src = "script.js"></script> 
+        <!--Video Section Below 1 Where to next-->
+        <script>
+            // play/pause video
+            let video = document.querySelector('.video-wrapper video');
+            document.getElementById('play-btn').addEventListener('click', () => {
+                if(video.paused){
+                    video.play();
+                } else {
+                    video.pause();
+                }
+            });
+        </script>
+
+
+        <!-- Travel Domestically featured section-->
+        <section id = "featured" class = "py-4">
+            <div class = "container">
+                <div class = "title-wrap">
+                    <span class = "sm-title">Top Things to see and do in New Zealand</span>
+                    <h2 class = "lg-title">Top 6 Hidden Gems</h2>
+                </div>
+
+                <div class = "featured-row">
+                    <div class = "featured-item my-2 shadow">
+                        
+                        <img src = "images/featured-MountStokes-Marlborough2.jpg" alt = "featured place">
+                        <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                Mount Stokes Marlborough Sounds
+                            </span>
+                            <div>
+                                <p class = "text">At 1203m Mt Stokes is the highest point in the Marlborough Sounds and is an incredible spot for a different perspective of an unreal setting.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "featured-item my-2 shadow">
+                        <img src = "images/featured-Castlepoint-Wairarapa.jpg" alt = "featured place">
+                        <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                Castlepoint, Wairarapa
+                            </span>
+                            <div>
+                                <p class = "text">The Castlepoint Lighthouse is pure beauty and a jewel in the crown of the Castlepoint Scenic Reserve</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "featured-item my-2 shadow">
+                        <img src = "images/featured-Stewart-Island-Southland.jfif" alt = "featured place">
+                        <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                Stewart Island,Southland
+                            </span>
+                            <div>
+                                <p class = "text">Stewart Island is home to one of New Zealand's Great Walks.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "featured-item my-2 shadow">
+                        <img src = "images/featured-Gibbsfarm.jfif" alt = "featured place">
+                        <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                Gibbs Farm, Auckland
+                            </span>
+                            <div>
+                                <p class = "text">Gibbs Farm showcases an array of large-scale outdoor sculptures in the Kaipara Harbour.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "featured-item my-2 shadow">
+                        <img src = "images/featured-OpararaArches-WestCoast.jfif" alt = "featured place">
+                        <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                               Oparara Arches, West Coast
+                            </span>
+                            <div>
+                                <p class = "text">The massive limestone arch is part of the Honeycomb Hill Caves and is an easy walk suitable for all fitness levels</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "featured-item my-2 shadow">
+                        <img src = "images/featured-Motueka,Saltwater-Baths.jfif" alt = "featured place">
+                        <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                Motueka, Saltwater Baths
+                            </span>
+                            <div>
+                                <p class = "text">Motueka Salt Water Baths. Aim to visit high tide in the early morning or sunset,so you can practice walking on water</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of featured section -->
+
+<!-- Start of Tiaki Section -->
+<section id = "services" class = "py-4">
+    <div class = "container">
+        <div class = "title-wrap">
+            <h2 class = "lg-title">Tiaki Promise</h2>
+
+
+
+            <span class = "sm-title">While Travelling in New Zealand I will</span>
+            
+        </div>
+
+        <div class = "services-row">
+            <div class = "services-item">
+               <span class ="services-icon">
+                <i class="fas fa-tree"></i>
+               </span>
+                
+                <h3>Protect Nature</h3>
+                <p class = "text">New Zealand's nature is precious and many of our native species are endangeres or at risk Remember to care for land, sea, and nature when you travel</p>
+                <a href = "#" class = "btn">Read more</a>
+            </div>
+
+            <div class = "services-item">
+                <span class = "services-icon">
+                    <i class = "fas fa-trash"></i>
+                </span>
+                <h3>Keep NZ Clean</h3>
+                <p class = "text">Kiwis are proud of this beautiful country and expect visitors to dispose of their litter and waste responsibly, even in remote areas</p>
+                <a href = "#" class = "btn">Read more</a>
+            </div>
+
+            <div class = "services-item">
+                <span class = "services-icon">
+                    <i class = "fas fa-car"></i>
+                </span>
+                <h3>Drive Carefully</h3>
+                <p class = "text">New Zealand has some of the most amazing scenic drives in the world, but our roads can be challenging at times. Drive carefully to keep yourself and others safe on the road.</p>
+                <a href = "#" class = "btn">Read more</a>
+            </div>
+
+            <div class = "services-item">
+                <span class = "services-icon">
+                    <i class = "fas fa-mountain"></i>
+                </span>
+                <h3>Be Prepared</h3>
+                <p class = "text">Exploring New Zealand’s great outdoors can be very different to what you might have experienced in other places. If you are leaving urban areas, some preparation can help you get the most out of your trip and keep yourself safe.</p>
+                <a href = "#" class = "btn">Read more</a>
+            </div>
+
+            <div class = "services-item">
+                <span class = "services-icon">
+                    <i class = "fas fa-landmark"></i>
+                </span>
+                <h3>Show Respect</h3>
+                <p class = "text">Travel with an open heart and mind. By taking the opportunity to understand our culture and respect our customs, you’ll have a positive impact on the communities you visit. In return, the people of Aotearoa New Zealand will leave a lasting impact on you.</p>
+                <a href = "#" class = "btn">Read more</a>
+            </div>
+
+            <div class = "services-item">
+                <span class = "services-icon">
+                    <i class = "fas fa-newspaper"></i>
+                </span>
+                <h3>Tiaki </h3>
+                <p class = "text">New Zealand is precious, and everyone who lives and travels here has a responsibility to look after it. The Tiaki Promise is a commitment to care for New Zealand, for now and for future generations.</p>
+                <a href = "#" class = "btn">Read more</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- testimonials section -->
+        <section id = "testimonials" class = "py-4">
+            <div class = "container">
+                <div class = "title-wrap">
+                    <span class = "sm-title">Air NZ Customer Reviews</span>
+                    
+                </div>
+
+                <div class = "test-row">
+                    <div class = "test-item">
+                        <p class = "text">I always thought it was weird to review an airline, but my husband and I just enjoyed our experience with them so much that I had to say something. Actually, from now on when traveling to that part of the country, I'm sure we will make it a point to travel using Air New Zealand (it also helps that we fell in love with Queenstown)
+                            -Sarah B
+                        </p>
+                        <div class = "test-item-info">
+                            <img src = "images/test-4.jpg" alt = "testimonial">
+                            <div>
+                                <h3>Sarah B</h3>
+                                <p class = "text">Trip to Brazil</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "test-item">
+                        <p class = "text">We didn't have the best start with Air New Zealand at the departure point at the Honolulu Airport.  When things do not start well, you wonder what kind of trip you are in for when you haven't flown with the airline before.  However, I must say...WOW...it was a great experience from the time we boarded in Hawaii to the arrival (and departure) in Auckland.  The onboard staff was extremely friendly, funny and willing to help with anything.  If they do not genuinely care about you, then they do a really good job of acting like it.
+                            -Patricia L  </p>
+                        <div class = "test-item-info">
+                            <img src = "images/test-5.jpg" alt = "testimonial">
+                            <div>
+                                <h3>Patricia L</h3>
+                                <p class = "text">Trip to Maldives</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "test-item">
+                        <p class = "text">Overall enjoyed flying on Air New Zealand. For our short flight from Auckland to Queenstown they came and offered beverages and snacks. One thing I do not like about this airline is how much they charge if you want to make an adjustment to your flight. Talk about nickel and diming consumers. 
+                            -Ariana K 
+                        </p>
+                        <div class = "test-item-info">
+                            <img src = "images/test-6.jpg" alt = "testimonial">
+                            <div>
+                                <h3>Ariana K</h3>
+                                <p class = "text">Trip to Thailand</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of testimonials section -->
+
+         <!-- video section -->
+         <section id = "video">
+            <div class = "video-wrapper flex">
+                <video loop>
+                    <source src = "videos/video-section1.mp4" type = "video/mp4">
+                </video>
+                <button type = "button" id = "play-btn">
+                    <i class = "fas fa-play"></i>
+                </button>
+            </div>
+        </section>
+        <!-- end of video section -->
+
+        <!-- footer -->
+        <footer class = "py-4">
+            <div class = "container footer-row">
+                <div class = "footer-item">
+                    <a href = "index.html" class = "site-brand">
+                        Air<span> New Zealand</span>
+                    </a>
+                    <p class = "text">A Star Alliance Member</p>
+                    <p class = "text"> CopyRight 2023 Air New Zealand Limited </p>
+                </div>
+
+                <div class = "footer-item">
+                    <h2>Follow us on: </h2>
+                    <ul class = "social-links">
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                       
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-youtube"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class = "footer-item">
+                    <h2>Local Top Destinations:</h2>
+                    <ul>
+                        <li><a href = "#">Auckland</a></li>
+                        <li><a href = "#">Queenstown</a></li>
+                        <li><a href = "#">Wellington</a></li>
+                        <li><a href = "#">Dunedin</a></li>
+                        <li><a href = "#">Christchurch</a></li>
+                    </ul>
+                </div>
+
+
+                <div class = "footer-item">
+                    <h2>Search for flights</h2>
+                    <ul>
+                        <li><a href = "#">About Air New Zealand</a></li>
+                    </br>
+                        <li><a href = "#">Operating fleet</a></li>
+                    </br>
+                        <li><a href = "#">Company profile</a></li>
+                    </br>
+                        <li><a href = "#">Sustainability</a></li>
+                    </br>
+                        <li><a href = "#">Investor Centre</a></li>
+                    </br>
+                    </ul>
+                </div>
+
+                <div class = "footer-item">
+                   
+                    <ul>
+                        <li><a href = "#">Cargo</a></li>
+                    </br>
+                        <li><a href = "#">Engineering&Maintenance</a></li>
+                    </br>
+                        <li><a href = "#">Legal terms&Conditions</a></li>
+                    </br>
+                        <li><a href = "#">Privacy Centre</a></li>
+                    </br>
+                        <li><a href = "#">Cyber Security Hub</a></li>
+                    </br>
+                    </ul>
+                </div>
+
+                <div class = "subscribe-form footer-item">
+                    <h2>Created by Patrick T</h2>
+                    <h2>Reference will be posted at Git</h2>
+                    
+                </div>
+            </div>
+        </footer>
+        <!-- end of footer -->
